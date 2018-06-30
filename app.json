@@ -1,6 +1,6 @@
 {
-  "name": "echoGoogle",
-  "description": "echoGoogle",
-  "repository": "https://github.com/dasthana24/echoGoogle",
+  "name": "Webhook-echo-sample",
+  "description": "Webhook echo sample",
+  "repository": "https://github.com/dasthana24/echoGoogle.git",
   "keywords": ["api.ai", "dialogflow", "natural language"]
 }
