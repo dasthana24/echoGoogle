@@ -23,7 +23,7 @@ restService.post("/echo", function(req, res) {
   return res.json({
     speech: speech,
     displayText: speech,
-    source: "webhook-echo-sample"
+    source: "echoGoogle"
   });
 });
 
@@ -55,7 +55,7 @@ restService.post("/audio", function(req, res) {
       speech =
         '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
       break;
-
+    //https://www.w3.org/TR/speech-synthesis/#S3.2.3
     case "cardinal":
       speech = '<speak><say-as interpret-as="cardinal">12345</say-as></speak>';
       break;
@@ -116,7 +116,7 @@ restService.post("/audio", function(req, res) {
   return res.json({
     speech: speech,
     displayText: speech,
-    source: "webhook-echo-sample"
+    source: "echoGoogle"
   });
 });
 
@@ -126,7 +126,7 @@ restService.post("/video", function(req, res) {
       '<speak>  <audio src="https://www.youtube.com/watch?v=VX7SSnvpj-8">did not get your MP3 audio file</audio></speak>',
     displayText:
       '<speak>  <audio src="https://www.youtube.com/watch?v=VX7SSnvpj-8">did not get your MP3 audio file</audio></speak>',
-    source: "webhook-echo-sample"
+    source: "echoGoogle"
   });
 });
 
@@ -188,7 +188,7 @@ restService.post("/slack-test", function(req, res) {
   return res.json({
     speech: "speech",
     displayText: "speech",
-    source: "webhook-echo-sample",
+    source: "echoGoogle",
     data: {
       slack: slack_message
     }
